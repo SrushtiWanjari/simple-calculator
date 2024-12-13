@@ -23,12 +23,90 @@
            margin-right: 15px;
         }
 
+        .Calculator-screen{
+            width: 450px;
+            height:70px;
+            font-size: 50px;
+            padding: 9px;
+            border-radius: 20px 20px 0 0;
+            text-align: right;
+            background-color: #d6d6c2;
+            display:block;
+            margin: 15px auto;
+            margin-bottom: 35px;
+        }
+
+        .btn-container{
+            height: 350px;
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .btn{
+            height: 45px;
+            width: 70px;
+            font-size: 20px;
+            text-align: center;
+            padding: 3px 0;
+            margin: 10px 5px;
+            border: solid 1px black;
+            border-radius:7px;
+            background: linear-gradient(to bottom, #33ccff 0%, #ccffff 100%);
+            box-shadow: 3px 2px black;
+            cursor: pointer;
+        }
+
+        .btn:hover{
+            background: linear-gradient(to bottom, #33ccff 0%, #99ff99 100%);
+            border: solid 1px ;
+            transition: 0.5s;
+        }
+
+        .plus-btn{
+            height:117px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
     <div class="small-screen"> </div>
     <input type="text" value="0" class="Calculator-screen">
+
+    <div class="btn-container">
+        <button class="btn">ON</button>
+        <button class="btn">7</button>
+        <button class="btn">4</button>
+        <button class="btn">1</button>
+        <button class="btn">0</button>
+
+        <button class="btn">M+</button>
+        <button class="btn">8</button>
+        <button class="btn">5</button>
+        <button class="btn">2</button>
+        <button class="btn">00</button>
+
+        <button class="btn">MC</button>
+        <button class="btn">9</button>
+        <button class="btn">6</button>
+        <button class="btn">3</button>
+        <button class="btn">.</button>
+
+        <button class="btn">MR</button>
+        <button class="btn">%</button>
+        <button class="btn">x</button>
+        <button class="btn plus-btn">+</button>
+
+        <button class="btn">OFF</button>
+        <button class="btn">CE</button>
+        <button class="btn">/</button>
+        <button class="btn">-</button>
+        <button class="btn">=</button>
+    </div>
+
     </div>
 </body>
 </html>
